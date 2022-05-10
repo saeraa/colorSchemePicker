@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500&family=Titillium+Web:wght@900&display=swap" rel="stylesheet" />
+    <title>Solo Project: Color Scheme Picker</title>
+</head>
+
+<body>
+    <div id="container">
+        <div id="title">
+            <h1>Color Picker</h1>
+            <p>
+                GENERATE COLOR SCHEME FROM <a href="https://www.thecolorapi.com/" target="_blank">THE COLOR API</a>
+            </p>
+        </div>
+        <div id="header">
+            <div id="colorInputDiv">
+                <input type="color" name="" id="colorInput" />
+            </div>
+            <div id="colorScheme">
+                <label for="colorMode">Color scheme:</label>
+                <select id="colorMode" name="colorMode">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome (dark)</option>
+            <option value="monochrome-light">Monochrome (light)</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+            </div>
+            <div id="button">
+                <button id="getScheme">Get color scheme</button>
+            </div>
+        </div>
+        <div id="main">
+
+            <div>
+                <div class="bg" style="background-color: #FFFFFF"></div>
+                <div class="hex">#FFFFFF</div>
+            </div>
+
+            <div>
+                <div class="bg" style="background-color: #D3D3D3"></div>
+                <div class="hex">#D3D3D3</div>
+            </div>
+            <div>
+                <div class="bg" style="background-color: #C0C0C0"></div>
+                <div class="hex">#C0C0C0</div>
+            </div>
+            <div>
+                <div class="bg" style="background-color: #444444"></div>
+                <div class="hex">#444444</div>
+            </div>
+            <div>
+                <div class="bg" style="background-color: #000000"></div>
+                <div class="hex">#000000</div>
+            </div>
+        </div>
+    </div>
+    <div id="copied">Hex code copied!</div>
+</body>
+
+</html>
